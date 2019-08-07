@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-// import { AuthModule } from './modules/auth/auth.module';
-// import { AdminModule } from './modules/admin/admin.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { AdminModule } from './modules/admin/admin.module';
 
 const routes: Routes = [  
     {
@@ -18,8 +18,8 @@ const routes: Routes = [
   
   @NgModule({
     imports: [
-    //   AuthModule,
-    //   AdminModule,
+      AuthModule,
+      AdminModule,
       CommonModule,
       RouterModule.forRoot(routes)
     ],
